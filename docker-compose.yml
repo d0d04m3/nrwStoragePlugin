@@ -2,7 +2,6 @@ version: '3.9'
 services:
 
   nrs1:   
-    container: nrs1
     public: true
     build:
       context: .

@@ -1,6 +1,4 @@
 version: '3.9'
-namespace: test
-name: demo
 services:
 
   nrs:   

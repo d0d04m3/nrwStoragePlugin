@@ -1,7 +1,9 @@
 version: '3.9'
+namespace: test
+name: demo
 services:
 
-  nrs:
+  nrs:   
     container_name: nrs1
     public: true
     build:

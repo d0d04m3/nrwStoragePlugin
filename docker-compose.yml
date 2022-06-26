@@ -1,7 +1,8 @@
 version: '3.9'
 services:
 
-  nrs1:
+  nrs:
+    container_name: nrs1
     public: true
     build:
       context: .

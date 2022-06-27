@@ -4,6 +4,8 @@ services:
   nrs1:   
     #name: $NR_APP_NAME,
     public: true
+    labels:
+      app: sample
     build:
       context: .
       dockerfile: Dockerfile

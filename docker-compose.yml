@@ -9,6 +9,8 @@ services:
       args: 
         - NR_ENV_ACCESS_PATH=/home/94r4d0x
         - NR_USER=94r4d0x
+        - NR_DB_URL=${NR_DB_URL}
+        - NR_APP_ID=${NR_APP_ID}
     environment:
       - TZ=Asia/Tokyo
       - DB_HOST=mongodb://mongodb:27017

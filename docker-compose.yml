@@ -2,7 +2,7 @@ version: '3.9'
 services:
 
   nrs1:   
-    name: $NR_APP_NAME,
+    #name: $NR_APP_NAME,
     public: true
     build:
       context: .

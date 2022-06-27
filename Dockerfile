@@ -1,5 +1,8 @@
 FROM nodered/node-red:latest
-
+ARG NR_DB_URL
+ARG NR_APP_ID
+ENV DBURL=${NR_DB_URL}
+ENV APPID=${NR_APP_ID}
 
 #COPY package.json .
 USER root

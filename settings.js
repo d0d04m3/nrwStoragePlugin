@@ -403,8 +403,9 @@ module.exports = {
     storageModule: require('node-red-contrib-storage-mongodb'),
 mongodbSettings: {
     //mongoURI: "mongodb://mongodb/nodered",
-    mongoURI: "mongodb+srv://94r4d0x:0@cluster0.cqm6vi1.mongodb.net/nodered",
-    appname: "r3"
+    //mongoURI: "mongodb+srv://user:pass@cluster0.cqm6vi1.mongodb.net/nodered",
+    mongoURI: process.env.DBURL,
+    appname: process.env.APPID,
 },
 
     /** The following property can be used to set predefined values in Global Context.

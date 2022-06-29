@@ -4,9 +4,9 @@ ARG NR_APP_ID
 ARG DBUSER
 ARG DBPASS
 ARG DBHOST
-ENV DBUSER=${DBUSER}
-ENV DBPASS=${DBPASS}
-ENV DBHOST=${DBHOST}
+ENV DBUSER=${NR_DB_USER}
+ENV DBPASS=${NR_DB_PASS}
+ENV DBHOST=${NR_DB_HOST}
 ENV DBURL=${NR_DB_URL}
 ENV APPID=${NR_APP_ID}
 #    mongoURI: process.env.DBURL ||  + "mongodb+srv://" + process.env.DBUSER + ":" + process.env.DBPASS + "@cluster0." + process.env.DBHOST + ".mongodb.net/nrServer" ,

@@ -1,8 +1,15 @@
 FROM nodered/node-red:latest
 ARG NR_DB_URL
 ARG NR_APP_ID
+ARG DBUSER
+ARG DBPASS
+ARG DBHOST
+ENV DBUSER=${DBUSER}
+ENV DBPASS=${DBPASS}
+ENV DBHOST=${DBHOST}
 ENV DBURL=${NR_DB_URL}
 ENV APPID=${NR_APP_ID}
+#    mongoURI: process.env.DBURL ||  + "mongodb+srv://" + process.env.DBUSER + ":" + process.env.DBPASS + "@cluster0." + process.env.DBHOST + ".mongodb.net/nrServer" ,
 
 #COPY package.json .
 USER root

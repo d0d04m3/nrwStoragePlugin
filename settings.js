@@ -404,8 +404,10 @@ module.exports = {
 mongodbSettings: {
     //mongoURI: "mongodb://mongodb/nodered",
     //mongoURI: "mongodb+srv://user:pass@cluster0.cqm6vi1.mongodb.net/nodered",
-    mongoURI: process.env.DBURL,
-    appname: process.env.APPID,
+    //mongodb+srv://user:<password>@cluster0.s8ptv.mongodb.net/?retryWrites=true&w=majority
+    //host: cqm6vi1, s8ptv
+    mongoURI: process.env.DBURL ||  + "mongodb+srv://" + process.env.DBUSER + ":" + process.env.DBPASS + "@cluster0." + process.env.DBHOST + ".mongodb.net/nrServer" ,
+    appname: process.env.APPID || "nrsn0",
 },
 
     /** The following property can be used to set predefined values in Global Context.

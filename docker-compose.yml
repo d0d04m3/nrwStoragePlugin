@@ -14,6 +14,9 @@ services:
         - NR_USER=94r4d0x
         - NR_DB_URL=${NR_DB_URL}
         - NR_APP_ID=${NR_APP_ID}
+        - NR_DB_USER=${NR_DB_USER}
+        - NR_DB_PASS=${NR_DB_PASS}
+        - NR_DB_HOST=${NR_DB_HOST}
     environment:
       - TZ=Asia/Tokyo
       - DB_HOST=mongodb://mongodb:27017

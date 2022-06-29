@@ -19,7 +19,9 @@
  *  - Node Settings
  *
  **/
-
+    var mongouri =  process.env.DBURL ||  + "mongodb+srv://" + process.env.DBUSER + ":" + process.env.DBPASS + "@cluster0." + process.env.DBHOST + ".mongodb.net/nrServer" ;
+    var appname =  process.env.APPID || "nrsn0";
+console.log( mongouri + " | " + appname);
 module.exports = {
 
 /*******************************************************************************
